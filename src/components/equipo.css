@@ -1,0 +1,43 @@
+.tituloEquipo{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+}
+
+.parrafoEquipo{
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.cardsContainer{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 40px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+}
+
+.card img{
+    height: 90%;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+}
+
+.card h3{
+    text-align: center;
+    padding: 5px;
+}

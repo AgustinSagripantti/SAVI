@@ -1,0 +1,18 @@
+#acercaDe{
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.textoAcercaDe{
+    width: 40%;
+}
+
+.tituloAcercaDe{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+}
+

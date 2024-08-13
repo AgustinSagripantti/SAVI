@@ -1,0 +1,38 @@
+#contacto{
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.datosContainer{
+    width: 30%;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 500px;
+    width: 40%;
+    padding: 20px;
+}
+
+form input{
+   height: 8%;
+   width: 100%;
+}
+
+form textarea{
+    min-height: 170px;
+    max-height: 335px;
+    width: 100%;
+    resize: vertical;  
+    overflow: auto;
+}

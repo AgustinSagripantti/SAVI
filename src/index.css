@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #d2e4cd;
+    font-family: sans-serif;
+    
+}
+
+*::selection{
+    background-color: #206e0a;
+    color: #fff;
+}
+  
