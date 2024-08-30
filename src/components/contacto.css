@@ -72,7 +72,7 @@ form textarea:focus {
   outline: 1px solid #c2eb77;
 }
 
-@media screen and (width < 480px) {
+@media screen and (width < 550px) {
   #contacto {
     margin-top: 48px;
     display: flex;
