@@ -1,43 +1,62 @@
-.tituloEquipo{
-    text-align: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
+.tituloEquipo {
+  text-align: center;
+  font-size: 30px;
 }
 
-.parrafoEquipo{
-    width: 50%;
+.parrafoEquipo {
+  width: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.cardsContainer {
+  /*  justify-content: center;
+  display: flex;
+  width: 75%;
+  flex-wrap: wrap;
+  gap: 48px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 35px;*/
+  margin: 0 auto;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  max-width: 1200px;
+  padding: 24px;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 3px 1px 5px #aaa;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 300px;
+  background-color: #90db5e;
+}
+
+.card img {
+  height: 90%;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+}
+
+.card h3 {
+  text-align: center;
+  padding: 5px;
+}
+
+@media screen and (width < 480px) {
+  .parrafoEquipo {
+    width: 80%;
     left: 0;
     right: 0;
-    margin: auto;
-}
-
-.cardsContainer{
-    display: flex;
-    width: 70%;
-    flex-wrap: wrap;
-    gap: 50px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 40px;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    height: 350px;
-    width: 300px;
-    border: 2px solid #ccc;
-    background-color: #fff;
-}
-
-.card img{
-    height: 90%;
-    width: 100%;
-    border-bottom: 2px solid #ccc;
-}
-
-.card h3{
     text-align: center;
-    padding: 5px;
+    margin: auto;
+  }
 }

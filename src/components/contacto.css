@@ -1,38 +1,102 @@
-#contacto{
+#contacto {
+  margin-top: 48px;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fcfcfc;
+}
+
+.datosContainer {
+  width: 30%;
+}
+
+.datosContainer p {
+  min-width: 20ch;
+  max-width: 65ch;
+}
+
+.info {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+form {
+  font-family: "Cantarell";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 500px;
+  width: 40%;
+  padding: 20px;
+}
+
+form input {
+  border: 1px solid #ccc;
+  padding: 0 8px 0 8px;
+  border-radius: 4px;
+  height: 8%;
+  width: 100%;
+}
+
+form input:focus {
+  outline: 1px solid #c2eb77;
+}
+
+.submit {
+  background-color: #fff;
+  outline: none;
+}
+
+.submit:hover {
+  cursor: pointer;
+  outline: 1px solid #c2eb77;
+}
+
+form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 170px;
+  max-height: 335px;
+  width: 100%;
+  resize: vertical;
+  overflow: auto;
+}
+
+form textarea:focus {
+  outline: 1px solid #c2eb77;
+}
+
+@media screen and (width < 480px) {
+  #contacto {
+    margin-top: 48px;
     display: flex;
-    padding: 40px;
+    padding: 24px;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
-}
+    flex-direction: column;
+    background-color: #fcfcfc;
+  }
 
-.datosContainer{
-    width: 30%;
-}
+  .datosContainer {
+    width: 96%;
+  }
 
-.info{
-    display: flex;
-    align-items: center;
-}
-
-form{
+  form {
+    font-family: "Cantarell";
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 10px;
-    height: 500px;
-    width: 40%;
-    padding: 20px;
-}
-
-form input{
-   height: 8%;
-   width: 100%;
-}
-
-form textarea{
-    min-height: 170px;
-    max-height: 335px;
-    width: 100%;
-    resize: vertical;  
-    overflow: auto;
+    height: 400px;
+    width: 95%;
+    padding: 16px;
+  }
 }
