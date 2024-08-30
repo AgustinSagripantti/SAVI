@@ -8,11 +8,11 @@ import {
   faChevronRight,
   faCircle,
 } from "@fortawesome/free-solid-svg-icons"
-import { savi1 } from "../assets/savi1"
-import { savi2 } from "../assets/savi2"
-import { savi3 } from "../assets/savi3"
+import savi1 from "../assets/savi1.jpeg"
+import savi2 from "../assets/savi2.jpeg"
+import savi3 from "../assets/savi3.jpeg"
 
-const images = [{ savi1 }, { savi2 }, { savi3 }]
+const images = [savi1, savi2, savi3]
 
 const Banner = () => {
   const settings = {

@@ -1,6 +1,6 @@
 import "./menu.css"
 import { useState, useEffect } from "react"
-import { logo } from "../assets/logo.png"
+import logo from "../assets/logo.png"
 
 function Menu() {
   const [isScrolled, setIsScrolled] = useState(false)

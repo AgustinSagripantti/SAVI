@@ -1,6 +1,7 @@
 import "./acercaDe.css"
 import logo from "../assets/logo.png"
 import { Model } from "./Model"
+import modelo from "../assets/savimodel.stl?url"
 
 function Parrafo() {
   return (
@@ -33,7 +34,7 @@ function Vista3D() {
   return (
     <>
       <div>
-        <Model url={"src/assets/savimodel.stl"}></Model>
+        <Model url={modelo}></Model>
       </div>
     </>
   )
