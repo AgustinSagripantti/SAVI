@@ -50,7 +50,7 @@ function Formulario() {
 
   const onSubmit = async (data) => {
     try {
-      await axios.post("http://localhost:3001/contact", { data })
+      await axios.post("https://savi-back.vercel.app/contact", { data })
       setOpen(true)
     } catch (e) {
       console.log(`error mail ${e}`)
