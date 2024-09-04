@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
   /*overflow-x: hidden;*/
+  overflow-x: hidden;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+
   background-color: #fff;
   /*background-color: #d2e4cd;*/
   font-family: "Cantarell";
@@ -30,7 +31,7 @@ body {
   }
 }
 
-@media screen and (width < 350px) {
+@media screen and (width < 380px) {
   body {
     font-size: 14px;
   }

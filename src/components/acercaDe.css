@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (width < 350px) {
+@media screen and (width < 400px) {
   #acercaDe {
     display: flex;
     justify-content: center;
