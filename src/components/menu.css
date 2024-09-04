@@ -51,7 +51,7 @@
   display: none;
 }
 
-@media screen and (width < 550px) {
+@media screen and (width < 768px) {
   .menu {
     display: block;
     outline: none;
