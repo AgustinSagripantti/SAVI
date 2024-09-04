@@ -42,3 +42,71 @@
   background-color: #fafafa;
   transition: 1s;
 }
+
+.menu {
+  display: none;
+}
+
+.back {
+  display: none;
+}
+
+@media screen and (width < 550px) {
+  .menu {
+    display: block;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    margin-right: 40px;
+  }
+
+  .back {
+    display: block;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .invisible {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    z-index: 1000;
+    transition: 1s;
+  }
+
+  .navbarLinks a {
+    color: #5c5c5c;
+  }
+
+  .navbarLinks {
+    height: 100vh;
+    width: 30vw;
+    box-shadow: -50px 0px 0px 100vmax #00000069;
+    justify-content: flex-start;
+    background-color: #00000042;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    text-align: end;
+    flex-direction: column;
+    padding: 48px;
+    right: 0;
+    top: 0;
+    margin: 0;
+    transition: all 0.4s;
+  }
+}

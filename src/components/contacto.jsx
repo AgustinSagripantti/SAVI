@@ -2,6 +2,10 @@ import "./contacto.css"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import { useForm } from "react-hook-form"
 import axios from "axios"
+import Alert from "@mui/material/Alert"
+import CheckIcon from "@mui/icons-material/Check"
+import { useState } from "react"
+import Snackbar from "@mui/material/Snackbar"
 
 function Datos() {
   return (
@@ -42,10 +46,12 @@ function Datos() {
 
 function Formulario() {
   const { register, handleSubmit } = useForm()
+  const [open, setOpen] = useState(false)
 
   const onSubmit = async (data) => {
     try {
-      await axios.post("https://savi-back.vercel.app/contact", { data })
+      await axios.post("http://localhost:3001/contact", { data })
+      setOpen(true)
     } catch (e) {
       console.log(`error mail ${e}`)
     }
@@ -69,6 +75,22 @@ function Formulario() {
           placeholder="Mensaje"
         ></textarea>
         <input className="submit" type="submit" />
+
+        <Snackbar
+          open={open}
+          autoHideDuration={3000}
+          message="Email Enviado"
+          onClose={() => setOpen(false)}
+        >
+          <Alert
+            onClose={() => setOpen(false)}
+            variant="filled"
+            icon={<CheckIcon fontSize="inherit" />}
+            severity={"success"}
+          >
+            Email Enviado
+          </Alert>
+        </Snackbar>
       </form>
     </>
   )
