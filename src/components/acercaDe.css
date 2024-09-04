@@ -27,7 +27,7 @@
   height: 45vh;
 }
 
-@media screen and (width < 770px) {
+@media screen and (width < 1080px) {
   #acercaDe {
     display: flex;
     flex-direction: column;
@@ -48,12 +48,6 @@
     left: 0;
     min-width: 50vw;
     min-height: 30vh;
-  }
-}
-
-@media screen and (width < 480px) {
-  .textoAcercaDe {
-    max-width: 30ch;
   }
 }
 
