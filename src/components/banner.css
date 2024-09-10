@@ -68,7 +68,6 @@
   color: gray;
   opacity: 1;
 }
-
 .slick-dots li.slick-active button::before {
   color: #fff !important;
 }

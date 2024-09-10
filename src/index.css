@@ -20,7 +20,6 @@ body {
   /*background-color: #d2e4cd;*/
   font-family: "Cantarell";
 }
-
 *::selection {
   background-color: #206e0a;
   color: #fff;
